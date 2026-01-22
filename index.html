@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+<style>
+body{
+    background-color: #aebfb3;
+}
+
+.container{
+    width:909px;
+    height: 600px;
+    background-color:  #aebfb3;
+    margin: 20px auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    border: 1px solid;
+}
+
+.container div.menu{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #263f69;
+}
+
+.menu section.fsection{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h1{
+    text-align: center;
+    color:gold;
+}
+
+.menu a{
+    font-size: 25px;
+    text-decoration: none;
+    padding:10px;
+    text-align: left;
+    margin-top: 15px;
+    color:white;
+    cursor: pointer;
+}
+
+.container div.profile{
+    width: 700px;
+    display: grid;
+    grid-row: auto auto;
+}
+
+.profile section.first-section {
+    height: 100px;
+    background-color: white;
+    display: flex;
+}
+
+.profile section.first-section h1 {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.profile section.first-section span {
+    padding-left: 20px;
+    margin-top: 0px;
+}
+
+.first-btn {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.first-btn button {
+    margin: 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.profile section.second-section {
+    height: 500px;
+    background-color: #aebfb3;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+.first-container {
+    margin: 20px;
+    background-color: white;
+    width: 340px;
+    height: 150px;
+}
+.first-container header{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.first-container h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.second-container {
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.second-container header {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.second-container h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.third-container {
+    background-color: white;
+    margin:20px; 
+    height: 250px;
+    width: 350px;
+}
+
+.third-container header{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.third-container h2 {
+    text-align: center;
+}
+
+.progress-bar {
+    border: 1px solid gray;
+    width: 270px;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.complete-percent {
+    width: 200px;
+    height: 30px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.fourth-container {
+    width:300px;
+    height: 250px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.fourth-container header {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.note-list {
+    margin-top: 20px;
+}
+
+.note-list li {
+    padding-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="menu">
+    <h1>Settings</h1>
+    <section class="fsection">
+        <a href="#">
+            Dashboard
+        </a>
+        <a href="#">
+            Analytics
+        </a>
+        <a href="#">
+            Tasks
+        </a>
+        <a href="#">
+            Settings
+        </a>
+    </section>
+  </div>
+  <div class="profile">
+        <section class="first-section">
+            <div>
+                <h1>Wai Phyo Htet</h1>
+                <span>Frontend Learner</span>
+            </div>
+            <div class="first-btn">
+                <button type="button">Update</button>
+                <button type="button">Log Out</button>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="first-container">
+                <header>Total Tasks</header>
+                <hr>
+                <h1>24</h1>
+            </div>
+            <div class="second-container">
+                <header>Completed</header>
+                <hr>
+                <h1>18</h1>
+            </div>
+            <div class="third-container">
+                <header>Progress</header>
+                <hr>
+                <h2>75% Completed</h2>
+                <div class="progress-bar">
+                    <div class="complete-percent"></div>
+                </div>
+            </div>
+            <div class="fourth-container">
+                <header>Notes</header>
+                <hr>
+                <ul class="note-list">
+                    <li>Don't forget to bet YG at 3 Am.</li>
+                    <li>Don't forget to bet Manchester United</li>
+                    <li>Don't forget to bet Team Liquid</li>
+                    <li>Si Thu Lwin Arsenal</li>
+                </ul>
+            </div>
+        </section>
+  </div>
+</div>
+
+</body>
+</html>
