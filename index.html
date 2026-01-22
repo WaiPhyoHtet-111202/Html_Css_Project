@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    width:909px;
+    width:905px;
     height: 600px;
     background-color:  #aebfb3;
     margin: 20px auto;
@@ -30,6 +30,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 
 .menu h1{
     text-align: center;
@@ -52,18 +53,25 @@ body{
     grid-row: auto auto;
 }
 
-.profile section.first-section {
+.first-section {
     height: 100px;
     background-color: white;
     display: flex;
 }
+.first-section div.logo {
+    align-content: center;
+}
+.first-section .logo img {
+    width: 50px;
+}
 
-.profile section.first-section h1 {
+
+.first-section h1 {
     padding-left: 20px;
     margin-bottom: 5px;
 }
 
-.profile section.first-section span {
+.first-section span {
     padding-left: 20px;
     margin-top: 0px;
 }
@@ -74,6 +82,7 @@ body{
     align-items: center;
     justify-content: flex-end;
 
+
 }
 
 .first-btn button {
@@ -83,12 +92,10 @@ body{
     border-radius: 5px;
 }
 
-.profile section.second-section {
+.second-section {
     height: 500px;
-    background-color: #aebfb3;
     display: grid;
     grid-template-columns: auto auto;
-    gap: 5px;
 }
 
 .first-container {
@@ -180,7 +187,7 @@ body{
 
 <div class="container">
   <div class="menu">
-    <h1>Settings</h1>
+    <h1>Menu</h1>
     <section class="fsection">
         <a href="#">
             Dashboard
@@ -198,7 +205,10 @@ body{
   </div>
   <div class="profile">
         <section class="first-section">
-            <div>
+            <div class="logo">
+                <img src="images/profile.png" alt="profile">
+            </div>
+            <div class="name">
                 <h1>Wai Phyo Htet</h1>
                 <span>Frontend Learner</span>
             </div>
