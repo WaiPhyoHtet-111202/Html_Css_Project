@@ -77,6 +77,11 @@ header {
     padding: 10px 30px;
 }
 
+.web-text button:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
 .aside{
     margin-top: 2rem;
     background-color: var(--Very-dark-blue);
@@ -211,6 +216,7 @@ header {
     .web-text button {
         margin-bottom: 0px;
     }
+
 
     .aside {
         margin-top: 0px;
