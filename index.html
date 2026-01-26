@@ -1,254 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-<style>
-body{
-    background-color: #aebfb3;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-.container{
-    width:905px;
-    height: 600px;
-    background-color:  #aebfb3;
-    margin: 20px auto;
-    display:grid;
-    grid-template-columns: auto auto;
-    border: 1px solid;
-}
-
-.container div.menu{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    background-color: #263f69;
-}
-
-.menu section.fsection{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.menu h1{
-    text-align: center;
-    color:gold;
-}
-
-.menu a{
-    font-size: 25px;
-    text-decoration: none;
-    padding:10px;
-    text-align: left;
-    margin-top: 15px;
-    color:white;
-    cursor: pointer;
-}
-
-.container div.profile{
-    width: 700px;
-    display: grid;
-    grid-row: auto auto;
-}
-
-.first-section {
-    height: 100px;
-    background-color: white;
-    display: flex;
-}
-.first-section div.logo {
-    align-content: center;
-}
-.first-section .logo img {
-    width: 50px;
-}
-
-
-.first-section h1 {
-    padding-left: 20px;
-    margin-bottom: 5px;
-}
-
-.first-section span {
-    padding-left: 20px;
-    margin-top: 0px;
-}
-
-.first-btn {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-
-}
-
-.first-btn button {
-    margin: 10px;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-
-.second-section {
-    height: 500px;
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.first-container {
-    margin: 20px;
-    background-color: white;
-    width: 340px;
-    height: 150px;
-}
-.first-container header{
-    margin: 10px;
-    font-size: 20px;
-}
-
-.first-container h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.second-container {
-    background-color: white;
-    width: 300px;
-    height: 150px;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.second-container header {
-    margin: 10px;
-    font-size: 20px;
-}
-
-.second-container h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.third-container {
-    background-color: white;
-    margin:20px; 
-    height: 250px;
-    width: 350px;
-}
-
-.third-container header{
-    margin: 10px;
-    font-size: 20px;
-}
-
-.third-container h2 {
-    text-align: center;
-}
-
-.progress-bar {
-    border: 1px solid gray;
-    width: 270px;
-    height: 30px;
-    margin: 10px auto;
-    border-radius: 10px;
-}
-.complete-percent {
-    width: 200px;
-    height: 30px;
-    background-color: green;
-    border-radius: 10px;
-}
-
-.fourth-container {
-    width:300px;
-    height: 250px;
-    background-color: white;
-    margin-top: 20px;
-}
-
-.fourth-container header {
-    margin: 10px;
-    font-size: 20px;
-}
-
-.note-list {
-    margin-top: 20px;
-}
-
-.note-list li {
-    padding-bottom: 10px;
-}
-</style>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/fonts/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <body>
-
-<div class="container">
-  <div class="menu">
-    <h1>Menu</h1>
-    <section class="fsection">
-        <a href="#">
-            Dashboard
-        </a>
-        <a href="#">
-            Analytics
-        </a>
-        <a href="#">
-            Tasks
-        </a>
-        <a href="#">
-            Settings
-        </a>
-    </section>
-  </div>
-  <div class="profile">
-        <section class="first-section">
-            <div class="logo">
-                <img src="images/profile.png" alt="profile">
+    <div class="main">
+        <header>
+            <img src="/assets/fonts/images/logo.svg" alt="logo">
+            <div class="bar-icon">
+                <i class="fa-solid fa-bars fa-2x"></i>
             </div>
-            <div class="name">
-                <h1>Wai Phyo Htet</h1>
-                <span>Frontend Learner</span>
-            </div>
-            <div class="first-btn">
-                <button type="button">Update</button>
-                <button type="button">Log Out</button>
-            </div>
-        </section>
-        <section class="second-section">
-            <div class="first-container">
-                <header>Total Tasks</header>
-                <hr>
-                <h1>24</h1>
-            </div>
-            <div class="second-container">
-                <header>Completed</header>
-                <hr>
-                <h1>18</h1>
-            </div>
-            <div class="third-container">
-                <header>Progress</header>
-                <hr>
-                <h2>75% Completed</h2>
-                <div class="progress-bar">
-                    <div class="complete-percent"></div>
+            <nav class="nav-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="image">
+            <div>
+                <img id="mobile" src="/assets/fonts/images/image-web-3-mobile.jpg" alt="mobile">
+                <img id="desktop" src="/assets/fonts/images/image-web-3-desktop.jpg" alt="desktop">
+                <div class="web-future">
+                    <h1>The Bright Future of Web 3.0</h1>
+                    <div class="web-text">
+                        <p>We dive into the next evolution of the web that
+                          claims to put the power of platforms back
+                          into the hands of the people.But is it really
+                          fulfilling its promise?
+                        </p>
+                        <button>
+                            Read More
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="fourth-container">
-                <header>Notes</header>
-                <hr>
-                <ul class="note-list">
-                    <li>Don't forget to bet YG at 3 Am.</li>
-                    <li>Don't forget to bet Manchester United</li>
-                    <li>Don't forget to bet Team Liquid</li>
-                    <li>Si Thu Lwin Arsenal</li>
-                </ul>
+            <div class="aside">
+                <h1>News</h1>
+                <div>
+                    <h3>Hydrogen VS Electric Cars</h3>
+                    <p>Will hydrogen-fueled cars ever catch up to EVs</p>
+                </div>
+                <div>
+                    <h3>The Downsides of Ai  Artistry</h2>
+                    <p>What are the possible  adverse effects of
+                        on-demand Ai image generation?
+                    </p>
+                </div>
+                <div>
+                    <h3>Is VC Funding Drying Up?</h3>
+                    <p>Private Fundling by VC firms is down 50%
+                        YOY.We take a look at what that means
+                    </p>
+                </div>
             </div>
         </section>
-  </div>
-</div>
-
+        <section class="cards">
+            <div class="card retro-card">
+                <img src="/assets/fonts/images/image-retro-pcs.jpg" alt="retro-pcs">
+                <div class="card-text">
+                    <h2>01</h1>
+                    <h3>Reviving Retro PCs</h3>
+                    <p>What happens when old PCs
+                    are given modern upgrades?
+                    </p>  
+                </div> 
+            </div>
+            <div class="card">
+                <img src="/assets/fonts/images/image-top-laptops.jpg" alt="laptop">
+                <div class="card-text laptop-card">
+                    <h2>02</h1>
+                    <h3>Top 10 laptops of 2022</h3>
+                    <p>Our best picks for various
+                      needs and budgets
+                    </p>
+                </div>
+            </div>
+            <div class=card>
+                <img src="/assets/fonts/images/image-gaming-growth.jpg" alt="gaming-growth">
+                <div class="card-text gaming-card">
+                    <h2>03</h2>
+                    <h3>The Growth of Gaming</h3>
+                    <p>How the pandemic has sparked
+                        fresh opportunities
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
