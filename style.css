@@ -207,6 +207,11 @@ header {
         margin-bottom: 0px;
     }
 
+    .web-text button:hover {
+        cursor: pointer;
+        color: var(--Very-dark-blue);
+    }
+
     .aside {
         margin-top: 0px;
     }
