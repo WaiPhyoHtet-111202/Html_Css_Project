@@ -142,6 +142,11 @@ header {
     padding-bottom: 10px;
 }
 
+.card-text h3:hover {
+    cursor: pointer;
+    color :var(--Soft-orange)
+}
+
 .card-text p {
     color : var(--Dark-grayish-blue);
 }
@@ -205,11 +210,6 @@ header {
 
     .web-text button {
         margin-bottom: 0px;
-    }
-
-    .web-text button:hover {
-        cursor: pointer;
-        color: var(--Very-dark-blue);
     }
 
     .aside {
