@@ -71,13 +71,14 @@ header {
     padding-bottom: 20px;
 }
 
-.web-text button{
+.read-more {
     background-color: var(--Soft-red);
     border: none;
     padding: 10px 30px;
 }
 
-.web-text button:hover {
+.read-more:hover {
+    color : var(--Off-white);
     background-color: var(--Very-dark-blue);
     cursor: pointer;
 }
@@ -213,7 +214,7 @@ header {
         gap : 40px;
     }
 
-    .web-text button {
+    .read-more {
         margin-bottom: 0px;
     }
 
