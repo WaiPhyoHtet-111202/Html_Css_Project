@@ -38,13 +38,32 @@ body {
     font-size : 2rem;
 }
 
+.transform-text {
+    max-width: 400px;
+}
+
+.stand-out {
+    max-width: 400px;
+}
+
+.graphic-design- {
+    color: var(--green-graphic-design-text);
+}
+
 .graphic-design-text {
     color: var(--green-graphic-design-text);
+    max-width: 500px;
 }
 
 .photography {
     color: var(--blue-photography-text);
 }
+
+.photography-text {
+    color: var(--blue-photography-text);
+    max-width: 500px;
+}
+
 
 .footer-text {
     color : var(--green-graphic-design-text)
