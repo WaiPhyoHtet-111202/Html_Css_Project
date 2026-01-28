@@ -28,18 +28,31 @@
   <body>
     <main>
       <header>
-        <div
-          class="lg:hidden bg-[url(/image/mobile/image-header.jpg)] bg-cover h-screen bg-center"
-        >
-          <nav class="flex justify-between items-center w-full">
-            <h1 class="p-10 font-bold text-white text-3xl">Sunnyside</h1>
-            <div class="lg:hidden p-10">
-              <i class="fa-solid fa-bars text-3xl"></i>
+        <!-- class="lg:hidden bg-[url(/image/mobile/image-header.jpg)] bg-cover h-screen bg-center" -->
+        <div class="lg:hidden relative w-full">
+          <div class="flex flex-column justify-center bg-red">
+            <nav
+              class="flex justify-between items-center absolute top-0 start-0 w-full"
+            >
+              <h1 class="p-10 font-bold text-white text-3xl">Sunnyside</h1>
+              <div class="lg:hidden p-10">
+                <i class="fa-solid fa-bars text-3xl"></i>
+              </div>
+            </nav>
+            <div
+              class="flex flex-col justify-center items-center absolute bottom-0 end-0 mb-48"
+            >
+              <h1 class="font-bold text-4xl text-white fixed">
+                We Are <br />
+                Creatives
+              </h1>
+              <img class="mt-5" src="/image/icon-arrow-down.svg" alt="arrow" />
             </div>
-          </nav>
-          <div class="flex flex-col justify-center items-center pt-48">
-            <h1 class="font-bold text-4xl text-white">We Are Creatives</h1>
-            <img class="mt-48" src="/image/icon-arrow-down.svg" alt="arrow" />
+            <img
+              class="w-full"
+              src="/image/mobile/image-header.jpg"
+              alt="mobile"
+            />
           </div>
         </div>
         <div
@@ -54,12 +67,17 @@
                 <li class="text-white">About</li>
                 <li class="text-white">Services</li>
                 <li class="text-white">Product</li>
-                <li class="bg-white border p-2 ps-3 pe-4 rounded-full">Contact</li>
+                <li class="bg-white border p-2 ps-3 pe-4 rounded-full">
+                  Contact
+                </li>
               </ul>
             </div>
           </nav>
           <div class="flex flex-col justify-center items-center pt-48">
-            <h1 class="font-bold text-4xl text-white">We Are Creatives</h1>
+            <h1 class="font-bold text-4xl text-white">
+              We Are <br />
+              Creatives
+            </h1>
             <img class="mt-48" src="/image/icon-arrow-down.svg" alt="arrow" />
           </div>
         </div>
@@ -116,7 +134,9 @@
             src="/image/mobile/image-stand-out.jpg"
             alt="stand-out"
           />
-          <div class="flex flex-col justify-center text-center items-center w-full py-20 gap-4 px-4">
+          <div
+            class="flex flex-col justify-center text-center items-center w-full py-20 gap-4 px-4"
+          >
             <h1 class="font-bold text-4xl">Stand out to the right audience</h1>
             <p class="text-gray-500">
               Using a collaborative formula of
@@ -168,7 +188,7 @@
             class="absolute bottom-1/4 flex flex-col justify-center text-center items-center"
           >
             <h1 class="font-bold text-3xl m-5">Graphic Design</h1>
-            <p class="text-emerald-400 m-5">
+            <p class="text-gray-500 m-5">
               Great design makes you memorable.We deliver artwork that
               underscores your brand message and captures potential client's
               attention
@@ -241,32 +261,29 @@
             <span class="mt-3">Bussiness Director</span>
           </div>
         </div>
-        <div
-          class="hidden lg:block flex flex-row items-center justify-center"
-        ></div>
       </section>
       <section>
         <div class="lg:hidden flex flex-wrap">
-            <img
-              class="w-1/2"
-              src="/image/mobile/image-gallery-milkbottles.jpg"
-              alt="mitk"
-            />
-            <img
-              class="w-1/2"
-              src="/image/mobile/image-gallery-orange.jpg"
-              alt="orange"
-            />
-            <img
-              class="w-1/2"
-              src="/image/mobile/image-gallery-cone.jpg"
-              alt="cone"
-            />
-            <img
-              class="w-1/2"
-              src="/image/mobile/image-gallery-sugar-cubes.jpg"
-              alt="sugar"
-            />
+          <img
+            class="w-1/2"
+            src="/image/mobile/image-gallery-milkbottles.jpg"
+            alt="mitk"
+          />
+          <img
+            class="w-1/2"
+            src="/image/mobile/image-gallery-orange.jpg"
+            alt="orange"
+          />
+          <img
+            class="w-1/2"
+            src="/image/mobile/image-gallery-cone.jpg"
+            alt="cone"
+          />
+          <img
+            class="w-1/2"
+            src="/image/mobile/image-gallery-sugar-cubes.jpg"
+            alt="sugar"
+          />
         </div>
         <div class="hidden lg:flex lg:flex-row">
           <div>
