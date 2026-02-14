@@ -1,102 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/fonts/images/favicon-32x32.png">
-  <title>Frontend Mentor | News homepage</title>
-  <link rel="stylesheet" href="/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-</head>
-<body>
-    <div class="main">
-        <header>
-            <img src="/assets/fonts/images/logo.svg" alt="logo">
-            <div class="bar-icon">
-                <i class="fa-solid fa-bars fa-2x"></i>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/fonts/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="logo" src="/assets/fonts/images/logo.svg" alt="logo" />
+        <div class="bar-icon" id="menu-btn">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="image">
+        <div>
+          <img
+            id="mobile"
+            src="/assets/fonts/images/image-web-3-mobile.jpg"
+            alt="mobile"
+          />
+          <img
+            id="desktop"
+            src="/assets/fonts/images/image-web-3-desktop.jpg"
+            alt="desktop"
+          />
+          <div class="web-future">
+            <h1>The Bright Future of Web 3.0</h1>
+            <div class="web-text">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of platforms back into the hands of the people.But is
+                it really fulfilling its promise?
+              </p>
+              <button class="read-more">Read More</button>
             </div>
-            <nav class="nav-list">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Popular</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Categories</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="image">
-            <div>
-                <img id="mobile" src="/assets/fonts/images/image-web-3-mobile.jpg" alt="mobile">
-                <img id="desktop" src="/assets/fonts/images/image-web-3-desktop.jpg" alt="desktop">
-                <div class="web-future">
-                    <h1>The Bright Future of Web 3.0</h1>
-                    <div class="web-text">
-                        <p>We dive into the next evolution of the web that
-                          claims to put the power of platforms back
-                          into the hands of the people.But is it really
-                          fulfilling its promise?
-                        </p>
-                        <button class="read-more">
-                            Read More
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="aside">
-                <h1>News</h1>
-                <div>
-                    <h3>Hydrogen VS Electric Cars</h3>
-                    <p>Will hydrogen-fueled cars ever catch up to EVs</p>
-                </div>
-                <div>
-                    <h3>The Downsides of Ai  Artistry</h2>
-                    <p>What are the possible  adverse effects of
-                        on-demand Ai image generation?
-                    </p>
-                </div>
-                <div>
-                    <h3>Is VC Funding Drying Up?</h3>
-                    <p>Private Fundling by VC firms is down 50%
-                        YOY.We take a look at what that means
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="cards">
-            <div class="card">
-                <img src="/assets/fonts/images/image-retro-pcs.jpg" alt="retro-pcs">
-                <div class="card-text">
-                    <h2>01</h1>
-                    <h3>Reviving Retro PCs</h3>
-                    <p>What happens when old PCs
-                    are given modern upgrades?
-                    </p>  
-                </div> 
-            </div>
-            <div class="card">
-                <img src="/assets/fonts/images/image-top-laptops.jpg" alt="laptop">
-                <div class="card-text">
-                    <h2>02</h1>
-                    <h3>Top 10 laptops of 2022</h3>
-                    <p>Our best picks for various
-                      needs and budgets
-                    </p>
-                </div>
-            </div>
-            <div class=card>
-                <img src="/assets/fonts/images/image-gaming-growth.jpg" alt="gaming-growth">
-                <div class="card-text">
-                    <h2>03</h2>
-                    <h3>The Growth of Gaming</h3>
-                    <p>How the pandemic has sparked
-                        fresh opportunities
-                    </p>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+        <div class="aside">
+          <h1>News</h1>
+          <div>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs</p>
+          </div>
+          <div>
+            <h3>The Downsides of Ai Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand Ai image
+              generation?
+            </p>
+          </div>
+          <div>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private Fundling by VC firms is down 50% YOY.We take a look at
+              what that means
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="card">
+          <img src="/assets/fonts/images/image-retro-pcs.jpg" alt="retro-pcs" />
+          <div class="card-text">
+            <h2>01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/fonts/images/image-top-laptops.jpg" alt="laptop" />
+          <div class="card-text">
+            <h2>02</h2>
+            <h3>Top 10 laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="/assets/fonts/images/image-gaming-growth.jpg"
+            alt="gaming-growth"
+          />
+          <div class="card-text">
+            <h2>03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="menu" id="menu-list">
+      <div class="close-btn" id="close">
+        <img src="./assets/fonts/images/icon-menu-close.svg" alt="close" />
+      </div>
+      <ul class="hide-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
     </div>
-</body>
+    <script>
+      const open = document.getElementById("menu-btn");
+      const close = document.getElementById("close");
+      open.onclick = () => {
+        document.getElementById("menu-list").style.display = "block";
+        open.style.display = "none";
+      };
+      close.onclick = () => {
+        document.getElementById("menu-list").style.display = "none";
+        open.style.display = "block";
+      };
+    </script>
+  </body>
 </html>
